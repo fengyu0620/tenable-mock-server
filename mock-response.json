@@ -1,0 +1,105 @@
+{
+  "data": {
+    "assets": {
+      "pageInfo": {
+        "startCursor": "cursor-1",
+        "endCursor": "cursor-1",
+        "hasNextPage": false,
+        "hasPreviousPage": false,
+        "__typename": "PageInfo"
+      },
+      "nodes": [
+        {
+          "id": "8992c0ff-c6c6-4d22-b16e-c01fbcef8f96",
+          "type": "OtDevice",
+          "superType": "OtDevice",
+          "details": {
+            "id": "8992c0ff-c6c6-4d22-b16e-c01fbcef8f96",
+            "name": "OT Deivce test20",
+            "firstSeen": "2026-04-28T17:45:08Z",
+            "lastSeen": "2026-04-28T19:50:19Z",
+            "lastUpdate": "2026-04-28T03:00:16Z",
+            "lastScanned": "2026-04-28T09:04:19Z",
+            "type": "plc",
+            "superType": "OtDevice",
+            "category": "Controllers",
+            "vendor": "Honeywell",
+            "modelName": "C3",
+            "family": "Experion",
+            "rawFamily": "Experion",
+            "firmwareVersion": "EXP520.1-55.263/EXP520.1-55.263",
+            "serial": "S1234567890",
+            "description": "tenable import test",
+            "os": "windows11",
+            "slot": "2",
+            "backplane": "13512344321",
+            "backplaneName": "ibm team",
+            "location": "Carrier",
+            "state": "Running",
+            "runStatus": "Running",
+            "runStatusTime": "2026-04-16T09:04:19Z",
+            "risk": 70,
+            "criticality": "4",
+            "purdueLevel": "Level1",
+            "hidden": false,
+
+            "ips": [
+              "10.9.1.7"
+            ],
+            "macs": [
+              "00:40:84:1c:c2:dc",
+              "00:40:84:1c:c2:dd"
+            ],
+            "directIp": "10.9.1.7",
+            "directIps": [
+              "10.9.1.7"
+            ],
+            "additionalIp": null,
+            "additionalIps": [],
+            "directMac": "00:40:84:1c:c2:dc",
+            "directMacs": [
+              "00:40:84:1c:c2:dc",
+              "00:40:84:1c:c2:dd"
+            ],
+            "additionalMac": null,
+            "additionalMacs": [],
+
+            "names": [
+              {
+                "id": "name-001",
+                "source": "sensor",
+                "value": "C300v3E #007 50ms"
+              }
+            ],
+            "descriptions": [
+              {
+                "id": "desc-001",
+                "source": "sensor",
+                "value": "Honeywell controller discovered in OT network"
+              }
+            ]
+          },
+          "segments": {
+            "nodes": [
+              {
+                "id": "seg-001",
+                "name": "Controller / 10.9.1.X",
+                "type": "network_segment",
+                "assetType": "ot",
+                "subnet": "10.9.1.0/24",
+                "system": "ICS",
+                "systemName": "ICS",
+                "isPredefinedName": false,
+                "__typename": "SegmentGroup"
+              }
+            ],
+            "__typename": "SegmentGroupConnection"
+          },
+          "__typename": "Asset"
+        }
+      ],
+      "count": 1,
+      "__typename": "AssetConnection"
+    }
+  }
+}
