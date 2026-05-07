@@ -38,14 +38,14 @@ app.get("/gateway/api/assets", (req, res) => {
   console.log(`Query params: ${JSON.stringify(req.query, null, 2)}`);
 
   try {
-    const assets = readJsonFile("Honeywell-Responce.json");
+    const assets = readJsonFile("Honeywell-Response.json");
     res.status(200).json(assets);
   } catch (error) {
-    console.error("Failed to read Honeywell-Responce.json:");
+    console.error("Failed to read Honeywell-Response.json:");
     console.error(error);
 
     res.status(500).json({
-      error: "Failed to read Honeywell-Responce.json",
+      error: "Failed to read Honeywell-Response.json",
       message: error.message
     });
   }
@@ -67,11 +67,11 @@ app.get("/Tenable-Response", (req, res) => {
 // Optional: check current Honeywell mock JSON
 app.get("/honeywell-assets", (req, res) => {
   try {
-    const assets = readJsonFile("Honeywell-Responce");
+    const assets = readJsonFile("Honeywell-Response.json");
     res.status(200).json(assets);
   } catch (error) {
     res.status(500).json({
-      error: "Failed to read Honeywell-Responce.json",
+      error: "Failed to read Honeywell-Response.json",
       message: error.message
     });
   }

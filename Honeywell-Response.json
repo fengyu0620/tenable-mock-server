@@ -1,20 +1,20 @@
 [
   {
-    "ip": "10.30.3.11",
-    "hostname": "L3-SCADA-SRV-01",
-    "mac": "00:50:56:8A:3C:11",
+    "ip": "10.30.3.18",
+    "hostname": "L3-SCADA-SRV-11",
+    "mac": "00:50:56:8A:3C:12",
     "vendor": "Dell Inc.",
     "ou": "OT Operations",
     "owner": "OT Infrastructure Team",
-    "location": "Plant A - Control Room",
+    "location": "Plant B - Control Room",
     "comment": "Primary SCADA application server for L3 operations network",
     "cveProduct": "Windows Server",
     "cveVersion": "2019",
     "assetTypes": ["scada_server", "server"],
     "nicType": "Ethernet",
     "customFields": {
-      "purdueLevel": "L3",
-      "site": "Plant A",
+      "purdueLevel": "L2",
+      "site": "Plant B",
       "zone": "Operations Network",
       "networkSegment": "10.30.3.0/24",
       "businessFunction": "SCADA supervision"
@@ -33,8 +33,8 @@
     "externalIpsCount": 2,
     "operatingSystem": "Windows Server 2019",
     "vlanId": [303],
-    "firstSeen": "2026-04-01T08:15:22.000Z",
-    "lastSeen": "2026-04-30T05:42:11.000Z",
+    "firstSeen": "2026-05-06T17:45:08Z",
+    "lastSeen": "2026-05-06T17:45:08Z",
     "riskScore": 72
   }
 ]
